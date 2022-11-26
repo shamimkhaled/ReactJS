@@ -5,3 +5,69 @@
     /*background-color: #f5f5f5;*/
 }
 
+input{
+    padding: 0.7rem;
+    border: 1px solid rgba(196, 196, 196, 0.68);
+    outline: none;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+}
+.coin{
+    padding: 1rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.coin > img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.coin > h3{
+    text-transform: uppercase;
+}
+.home{
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.loader > div{
+    width: 300px;
+    height: 300px;
+    border-bottom: 4px solid red;
+    border-radius: 50%;
+    animation: rotation 1s infinite ease-in;
+}
+.loader > p{
+    font: 400 3rem cursive;
+    margin: 1rem;
+}
+
+@keyframes rotation {
+    to{
+        transform: rotateZ(360deg);
+    }
+}

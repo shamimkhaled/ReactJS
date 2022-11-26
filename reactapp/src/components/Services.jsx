@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Services() {
+const Services = () => {
   return (
-    <div><h3>This is Services Components</h3></div>
+    <div>
+        <h3>This is Services Components</h3>
+    </div>
   )
 }
 

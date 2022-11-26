@@ -1,14 +1,17 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import {  } from 'react-router-dom'
 
-const Product = () => {
-    const params = useParams()
+const Coin = ({name, symbol, imgSrc, price}) => {
+    //const params = useParams()
 
   return (
-    <div>
-        <h1> #{params.id} </h1>
+    <div className='coin'>
+      <img src={imgSrc} alt={name}/>
+        <h3> {symbol} </h3>
+        <p>{name}</p>
+        <p>${price}</p>
     </div>
   )
 }
 
-export default Product
+export default Coin
